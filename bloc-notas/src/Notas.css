@@ -1,0 +1,78 @@
+/* Contenedor principal de cada nota */
+.nota-container {
+  margin: 12px auto;
+  padding: 14px 18px;
+  max-width: 500px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.nota-container:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Texto de la nota */
+.nota-texto {
+  padding: 2px;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  text-align: left;
+  word-break: break-word;
+}
+
+/* Menú desplegable de opciones */
+.opciones-dropdown {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Botón de editar */
+.boton-editar {
+  background-color: #ffc107;
+  color: #000;
+  border: none;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.boton-editar:hover {
+  background-color: #e0a800;
+}
+
+/* Botón de eliminar */
+.boton-eliminar {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.boton-eliminar:hover {
+  background-color: #c82333;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,80 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(
+    to right,
+    #e0ecf8,
+    #f5f9ff
+  ); /* Degradado azul claro */
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 60px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Contenedor de cada nota */
+.nota-container {
+  margin-bottom: 16px;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: fadeInUp 0.4s ease;
+}
+
+/* Efecto al pasar el mouse */
+.nota-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animación al pasar el mouse */
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Rebote suave */
+}
+
+/* Animación inicial al cargar */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.lista-notas > .nota-container {
+  animation: fadeInUp 0.4s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
