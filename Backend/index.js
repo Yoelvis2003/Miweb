@@ -13,6 +13,7 @@ app.use(bodyParser.json());
 
 // Rutas
 app.get("/notas", async (req, res) => {
+  console.log("Base de datos conectada correctamente");
   try {
     const result = await pool.query("SELECT * FROM notas ORDER BY id DESC");
     res.json(result.rows);
